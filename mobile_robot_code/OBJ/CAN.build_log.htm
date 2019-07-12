@@ -1,0 +1,99 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: LIU LYF, 1, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard Cortex-M only  Version: 5.14.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.14.0_KEIL
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+E:\毕业设计代码\底盘下位机控制程序\USER\CAN.uvprojx
+Project File Date:  01/06/2019
+
+<h2>Output:</h2>
+Rebuild target 'CAN'
+compiling main.c...
+main.c(236): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+                  LCD_ShowString(30,70,200,24,24,Posx_str);
+main.c(237): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+                LCD_ShowString(30,100,200,24,24,Posy_str);
+main.c(238): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+                LCD_ShowString(30,130,200,24,24,MR_str);
+main.c(239): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+                LCD_ShowString(30,160,200,24,24,ML_str);
+main.c(240): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+                  LCD_ShowString(30,190,200,24,24,odr);
+main.c(241): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+                LCD_ShowString(30,220,200,24,24,odl);
+main.c(119): warning:  #177-D: variable "key" was declared but never referenced
+        u8 key;
+main.c(121): warning:  #177-D: variable "j" was declared but never referenced
+        u8 j=0,m=0;
+main.c(122): warning:  #177-D: variable "speed_right" was declared but never referenced
+        char* speed_right= 0;
+main.c(123): warning:  #177-D: variable "speed_left" was declared but never referenced
+        char* speed_left= 0;
+main.c(133): warning:  #177-D: variable "cnt" was declared but never referenced
+        u8 cnt=0;
+main.c(134): warning:  #177-D: variable "res" was declared but never referenced
+        u8 res;
+main.c(135): warning:  #177-D: variable "mode" was declared but never referenced
+        u8 mode=0;//CAN工作模式;0,普通模式;1,环回模式
+main.c: 13 warnings, 0 errors
+compiling stm32f4xx_it.c...
+compiling system_stm32f4xx.c...
+compiling led.c...
+compiling lcd.c...
+compiling key.c...
+compiling can.c...
+..\HARDWARE\CAN\can.c(542): warning:  #223-D: function "abs" declared implicitly
+          Temp_PWM = abs(Temp_PWM);
+..\HARDWARE\CAN\can.c(622): warning:  #223-D: function "abs" declared implicitly
+          Temp_PWM = abs(Temp_PWM);
+..\HARDWARE\CAN\can.c(627): warning:  #223-D: function "abs" declared implicitly
+          Temp_Velocity = abs(Temp_Velocity);
+..\HARDWARE\CAN\can.c: 3 warnings, 0 errors
+compiling odometry.c...
+..\HARDWARE\Odometry\odometry.c(88): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        deit_theta = (right-left)*0.00981/wheel_interval;
+..\HARDWARE\Odometry\odometry.c: 1 warning, 0 errors
+compiling tim2_5_6.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+assembling startup_stm32f40_41xxx.s...
+compiling misc.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_fsmc.c...
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_syscfg.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4xx_can.c...
+compiling stm32f4xx_tim.c...
+linking...
+Program Size: Code=46098 RO-data=6998 RW-data=276 ZI-data=1924  
+FromELF: creating hex file...
+"..\OBJ\CAN.axf" - 0 Error(s), 17 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  E:\毕业设计代码\底盘下位机控制程序\USER\RTE
+  D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>
